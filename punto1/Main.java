@@ -7,7 +7,7 @@ public class Main {
         System.out.println("Creando configuraciones de automóviles...");
 
         // --- Coche 1: Configuración Deportiva Completa ---
-        // Se usan los métodos encadenados para una configuración clara.
+
         Automovil cocheDeportivo = new Automovil.AutomovilBuilder()
             .conMotor("V8 Turbo")
             .conColor("Rojo Ferrari")
@@ -22,7 +22,7 @@ public class Main {
         System.out.println(cocheDeportivo);
 
         // --- Coche 2: Configuración Económica y Básica ---
-        // Se omiten los atributos opcionales, demostrando la flexibilidad.
+
         Automovil cocheEconomico = new Automovil.AutomovilBuilder()
             .conMotor("1.6L 4 cilindros")
             .conColor("Plata")

@@ -11,7 +11,7 @@ public class Automovil {
     private final boolean techoSolar;
     private final boolean navegacionGPS;
 
-    // 1. Constructor privado que recibe el Builder
+
     // Esto asegura que el objeto solo pueda ser instanciado desde el Builder.
     private Automovil(AutomovilBuilder builder) {
         this.motor = builder.motor;
@@ -44,7 +44,7 @@ public class Automovil {
                " - Navegación GPS: " + (navegacionGPS ? "Sí" : "No");
     }
 
-    // 2. Clase Builder anidada y estática
+
     // Es responsable de la construcción del objeto Automovil.
     public static class AutomovilBuilder {
 
@@ -57,7 +57,6 @@ public class Automovil {
         private boolean techoSolar = false; // Valor por defecto
         private boolean navegacionGPS = false; // Valor por defecto
 
-        // 3. Métodos "fluidos" para configurar cada atributo.
         // Devuelven el propio builder para permitir el encadenamiento de llamadas (fluent interface).
         public AutomovilBuilder conMotor(String motor) {
             this.motor = motor;
@@ -94,7 +93,6 @@ public class Automovil {
             return this;
         }
 
-        // 4. Método final 'build' para construir el objeto Automovil.
         // Llama al constructor privado de la clase externa.
         public Automovil build() {
             return new Automovil(this);
