@@ -37,3 +37,19 @@ Cambio dinámico en tiempo de ejecución: El tipo de notificación puede cambiar
 
 Separa la abstracción de la implementación: Los tipos de notificación (Mensaje, Alerta, Advertencia, Confirmación) están desacoplados de las plataformas (Web, Móvil, Escritorio).
 
+## Punto 3
+### Patrón de Diseño Utilizado
+Tipo de Patrón: Comportamental
+
+El problema se enfoca en cómo los usuarios interactúan y se comunican entre sí. La principal dificultad recae en la gestión del flujo de mensajes y la red de dependencias que se genera cuando todos necesitan hablar con todos. Por esta causa, la solución se clasifica dentro de los patrones de comportamiento, ya que estos se especializan en gestionar algoritmos y la asignación de responsabilidades entre objetos para simplificar su comunicación.
+
+### Patrón Seleccionado: Mediator
+Se ha implementado el patrón de diseño Mediator ya que permite centralizar la comunicación de un grupo de objetos, evitando que tengan que conocerse entre sí. El ChatRoom actúa como el mediador central que gestiona toda la interacción.
+
+El patrón Mediator fue seleccionado porque:
+
+Mejora la escalabilidad y el mantenimiento: Añadir o eliminar usuarios del chat es sencillo. Solo se necesita registrar al usuario en el mediador (chatRoom.agregarUsuario(nuevoUsuario)). Los demás usuarios no se ven afectados ni necesitan ser actualizados.
+
+Centraliza la lógica de comunicación: La responsabilidad de distribuir un mensaje a todos los participantes recae exclusivamente en el ChatRoom. Si en el futuro se quiere añadir una nueva regla (ej. filtrar palabras, registrar mensajes), solo se modifica el mediador, sin tocar la clase Usuario.
+
+Reduce el acoplamiento directo: En lugar de que cada Usuario mantenga una referencia a todos los demás usuarios, solo necesita conocer al objeto ChatRoom. Esto reduce las dependencias de una red compleja (N a N) a una simple estrella (N a 1).
