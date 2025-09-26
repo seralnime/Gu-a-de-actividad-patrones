@@ -2,6 +2,7 @@
 ## Punto 1
 ### Patrón de Diseño Utilizado
 Tipo de Patrón: Creacional 
+
 El problema se enfoca en el proceso de instanciación de un objeto Automovil que posee múltiples y complejas configuraciones. Por esta razón, la solución pertenece a la familia de patrones creacionales, ya que estos se especializan en optimizar y flexibilizar los mecanismos de creación de objetos.
 
 ### Patrón Seleccionado: Builder
@@ -21,7 +22,7 @@ Facilita la inmutabilidad: Asegura que el objeto Automovil, una vez construido, 
 ### Patrón de Diseño Utilizado
 Tipo de Patrón: Estructural
 
-El problema se centra en evitar la explosión de subclases al combinar diferentes tipos de notificación (mensaje, alerta, advertencia, confirmación)con diferentes medios de presentación (web, móvil, escritorio). Por esta causa, la solución se clasifica dentro de los patrones estructurales, ya que estos se dedican a organizar y mejorar las conexiones entre clases y objetos para crear estructuras más adaptables y que se pueden ampliar fácilmente.
+El problema se centra en evitar la explosión de subclases al combinar diferentes tipos de notificación (mensaje, alerta, advertencia, confirmación) con diferentes medios de presentación (web, móvil, escritorio). Por esta causa, la solución se clasifica dentro de los patrones estructurales, ya que estos se dedican a organizar y mejorar las conexiones entre clases y objetos para crear estructuras más adaptables y que se pueden ampliar fácilmente.
 
 ### Patrón Seleccionado: Bridge
 Se ha implementado el patrón de diseño Bridge. Esta elección es la solución canónica para desacoplar una abstracción (tipo de notificación) de su implementación (plataforma de presentación), evitando la creación de una subclase por cada combinación posible.
