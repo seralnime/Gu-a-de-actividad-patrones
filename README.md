@@ -58,3 +58,5 @@ Mejora la escalabilidad y el mantenimiento: Añadir o eliminar usuarios del chat
 Centraliza la lógica de comunicación: La responsabilidad de distribuir un mensaje a todos los participantes recae exclusivamente en el ChatRoom. Si en el futuro se quiere añadir una nueva regla (ej. filtrar palabras, registrar mensajes), solo se modifica el mediador, sin tocar la clase Usuario.
 
 Reduce el acoplamiento directo: En lugar de que cada Usuario mantenga una referencia a todos los demás usuarios, solo necesita conocer al objeto ChatRoom. Esto reduce las dependencias de una red compleja (N a N) a una simple estrella (N a 1).
+
+### Diagrama de clases: <img width="1091" height="916" alt="image" src="https://github.com/user-attachments/assets/73f5f349-a397-4ff1-9e5a-5d9e9720fa5c" />
