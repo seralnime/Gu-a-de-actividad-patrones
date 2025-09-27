@@ -59,4 +59,5 @@ Centraliza la lógica de comunicación: La responsabilidad de distribuir un mens
 
 Reduce el acoplamiento directo: En lugar de que cada Usuario mantenga una referencia a todos los demás usuarios, solo necesita conocer al objeto ChatRoom. Esto reduce las dependencias de una red compleja (N a N) a una simple estrella (N a 1).
 
-### Diagrama de clases: <img width="1091" height="916" alt="image" src="https://github.com/user-attachments/assets/73f5f349-a397-4ff1-9e5a-5d9e9720fa5c" />
+### Diagrama de clases: <img width="1082" height="923" alt="image" src="https://github.com/user-attachments/assets/85039453-4249-4d32-9867-37b32091d6d0" />
+
