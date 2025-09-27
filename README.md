@@ -18,6 +18,9 @@ Ofrece alta flexibilidad: Permite que los atributos opcionales sean omitidos lim
 
 Facilita la inmutabilidad: Asegura que el objeto Automovil, una vez construido, no pueda ser modificado, garantizando su integridad y seguridad en el uso.
 
+### Diagrama de clases: <img width="1814" height="551" alt="image" src="https://github.com/user-attachments/assets/94a9fb55-8b07-4029-b8fe-de653f68239d" />
+
+
 ## Punto 2
 ### Patrón de Diseño Utilizado
 Tipo de Patrón: Estructural
@@ -36,6 +39,8 @@ Escalabilidad y flexibilidad: Permite añadir nuevas plataformas o tipos de noti
 Cambio dinámico en tiempo de ejecución: El tipo de notificación puede cambiar de plataforma en cualquier momento, ofreciendo gran adaptabilidad en contextos heterogéneos (ej. mostrar la misma alerta en web y móvil).
 
 Separa la abstracción de la implementación: Los tipos de notificación (Mensaje, Alerta, Advertencia, Confirmación) están desacoplados de las plataformas (Web, Móvil, Escritorio).
+
+### Diagrama de clases: <img width="1808" height="552" alt="image" src="https://github.com/user-attachments/assets/4edaec93-c05f-40ab-970f-2883f526b9e6" />
 
 ## Punto 3
 ### Patrón de Diseño Utilizado
